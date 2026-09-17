@@ -87,7 +87,7 @@
                 &mkp LCLK
                 &mkp RCLK
                 &mkp MCLK
-                &mkp BT_CLR
+                &bt BT_CLR
                 &mkp MB5
             >;
             sensor-bindings = <&rot_enc>;

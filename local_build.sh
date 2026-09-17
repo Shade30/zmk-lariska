@@ -15,7 +15,7 @@ build () {
     export ZMK_MODULE_DIRS="${ZMK_PAW_3395};${ZMK_RGBLED_WIDGET};${ZMK_RATE_LIMITER}"
     rm -rf $CURRENT_DIR/build/$shield
     west build \
-        -p -b nice_nano \
+        -p -b nice_nano//zmk \
         -S studio-rpc-usb-uart \
         -S zmk-usb-logging \
         -d "$CURRENT_DIR/build/$shield" -- \
@@ -30,7 +30,7 @@ build () {
 build_reset () {
     rm -rf $CURRENT_DIR/build/reset
     west build \
-        -p -b nice_nano \
+        -p -b nice_nano//zmk \
         -S studio-rpc-usb-uart \
         -d "$CURRENT_DIR/build/reset" -- \
         -DZMK_CONFIG="$CURRENT_DIR" \

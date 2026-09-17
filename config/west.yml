@@ -9,16 +9,16 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 9ebbeff0a8b69a42f14aec022cdf16c7a107b9e0
       import: app/west.yml
     - name: zmk-paw3395-driver
       remote: ggrocer
-      revision: main
+      revision: 79b4dfc7bee857dff320a381fe8b193c9307680f
     - name: zmk-vfx-rgbled-indicator
       remote: ggrocer
-      revision: main
+      revision: 3199c7987d8ade7ee81144a962caddabaf73a985
     - name: zmk-input-processor-report-rate-limit
       remote: badjeff
-      revision: main
+      revision: b056cb135525933743e2627150fb390f9d4b2461
   self:
     path: config
